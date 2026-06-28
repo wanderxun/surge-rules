@@ -5,3 +5,5 @@ DOMAIN-SUFFIX,cloudflarestorage.com
 DOMAIN-SUFFIX,ghcr.io
 DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,duolingo.com
+DOMAIN,temuchat-api.temu.com
+DOMAIN-SUFFIX,temu.com
