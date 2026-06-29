@@ -7,3 +7,4 @@ DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,duolingo.com
 DOMAIN,temuchat-api.temu.com
 DOMAIN-SUFFIX,temu.com
+PROCESS-NAME,Telegram
