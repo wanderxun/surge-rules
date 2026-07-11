@@ -15,3 +15,7 @@ DOMAIN-SUFFIX,licdn.com
 DOMAIN-SUFFIX,licdn.cn
 DOMAIN-SUFFIX,linkedin.cn
 DOMAIN-SUFFIX,lnkd.in
+DOMAIN-SUFFIX,download.pytorch.org
+DOMAIN-SUFFIX,pytorch.org
+DOMAIN-SUFFIX,pypi.org
+DOMAIN-SUFFIX,pythonhosted.org
