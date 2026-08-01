@@ -7,3 +7,24 @@ AND,((SRC-IP,192.168.100.137),(PROTOCOL,UDP),(DEST-PORT,123))
 AND,((PROTOCOL,UDP),(DEST-PORT,123))
 DOMAIN-SUFFIX,feimu.tv
 DOMAIN-SUFFIX,cdn.feimu.tv
+# 影视源
+DOMAIN-SUFFIX,wogg.xxooo.cf
+DOMAIN-SUFFIX,wogg.live
+
+# 百度生态
+DOMAIN-SUFFIX,baidu.com
+DOMAIN-SUFFIX,baidupcs.com
+
+# 夸克
+DOMAIN-SUFFIX,quark.cn
+
+# 图片/API
+DOMAIN-SUFFIX,doubanio.com
+DOMAIN-SUFFIX,360kan.com
+DOMAIN-SUFFIX,pleasfun.com
+DOMAIN-SUFFIX,omdbapi.com
+
+# CDN节点
+IP-CIDR,113.200.143.23/32,no-resolve
+IP-CIDR,101.199.255.221/32,no-resolve
+IP-CIDR,43.248.130.20/32,no-resolve
