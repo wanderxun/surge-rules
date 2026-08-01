@@ -41,3 +41,32 @@ DOMAIN-SUFFIX,icons8.com
 
 # 腾讯图片CDN
 IP-CIDR,163.177.113.4/32,no-resolve
+
+# JSTV影视源
+
+DOMAIN-SUFFIX,h27sq4f.com
+DOMAIN-SUFFIX,214521.xyz
+DOMAIN-SUFFIX,wexwp.cc
+DOMAIN-SUFFIX,yydsys.cc
+DOMAIN-SUFFIX,yydsys.top
+DOMAIN-SUFFIX,miqk.cc
+DOMAIN-SUFFIX,2xiao.eu.cc
+DOMAIN-SUFFIX,2xiaopan.top
+DOMAIN-SUFFIX,zhizhen1.shop
+DOMAIN-SUFFIX,zhizhen1.top
+DOMAIN-SUFFIX,mihdr.top
+DOMAIN-SUFFIX,yiys05.com
+DOMAIN-SUFFIX,qupanshe.com
+DOMAIN-SUFFIX,panl.me
+DOMAIN-SUFFIX,45hk.com
+DOMAIN-SUFFIX,rrdynb.com
+DOMAIN-SUFFIX,qwmp4.com
+DOMAIN-SUFFIX,moduzy.net
+DOMAIN-SUFFIX,ikanbot.eu.org
+DOMAIN-SUFFIX,pianku.online
+DOMAIN-SUFFIX,dbokutv.com
+DOMAIN-SUFFIX,pansoo.cn
+DOMAIN-SUFFIX,pinglian.ol
+
+# API
+DOMAIN-SUFFIX,999888456.xyz
