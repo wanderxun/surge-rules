@@ -70,3 +70,20 @@ DOMAIN-SUFFIX,pinglian.ol
 
 # API
 DOMAIN-SUFFIX,999888456.xyz
+
+
+DOMAIN-SUFFIX,2xlaopan.one
+DOMAIN-SUFFIX,666291.xyz
+DOMAIN-SUFFIX,muou.site
+DOMAIN-SUFFIX,muou.asla
+
+
+# 苹果CMS/VOD接口
+
+IP-CIDR,103.42.182.5/32,no-resolve
+
+
+# 播放器通信
+
+IP-CIDR,194.221.250.50/32,no-resolve
+
