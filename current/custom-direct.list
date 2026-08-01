@@ -28,3 +28,16 @@ DOMAIN-SUFFIX,omdbapi.com
 IP-CIDR,113.200.143.23/32,no-resolve
 IP-CIDR,101.199.255.221/32,no-resolve
 IP-CIDR,43.248.130.20/32,no-resolve
+
+# 影视资源站
+DOMAIN-SUFFIX,hgeme.com
+DOMAIN-SUFFIX,xn--74qz10cqsltibh40akss.com
+DOMAIN-SUFFIX,xn--vcsx1ip8b8w4i.com
+DOMAIN-SUFFIX,xn--wcv59z.com
+DOMAIN-SUFFIX,xn--10vr61a3xc5x3b.com
+
+# 图片资源
+DOMAIN-SUFFIX,icons8.com
+
+# 腾讯图片CDN
+IP-CIDR,163.177.113.4/32,no-resolve
