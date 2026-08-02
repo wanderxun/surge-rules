@@ -80,4 +80,6 @@ DOMAIN-SUFFIX,muou.asla
 # 中国IP
 GEOIP,CN
 
+# 直播源
+DOMAIN-SUFFIX,live.ottiptv.cc
 
