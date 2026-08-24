@@ -20,3 +20,4 @@ DOMAIN-SUFFIX,amazon.sg
 DOMAIN-SUFFIX,amazonpay.com
 DOMAIN-SUFFIX,amazon-adsystem.com
 DOMAIN-SUFFIX,amazontrust.com
+DOMAIN,ipinfo.io,DIRECT
