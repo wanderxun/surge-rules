@@ -1,0 +1,43 @@
+#!name=个人专属自定义规则
+#!desc=包含应用拦截、局部设备限制、远程自定义分流规则
+#!category=自定义
+
+# -------------------------------------------------------------
+# 策略组兜底定义（如果你的机场主配置已经有这两个组，主配置的会优先）
+# -------------------------------------------------------------
+[Proxy Group]
+💬 Ai平台 = select, PROXY, DIRECT
+🌍 国外媒体 = select, PROXY, DIRECT
+
+# -------------------------------------------------------------
+# 自定义规则集
+# -------------------------------------------------------------
+[Rule]
+# === 1. 本机 App 拦截（已规范为标准进程名） ===
+PROCESS-NAME,Capture One,REJECT
+PROCESS-NAME,Luminar Neo,REJECT
+PROCESS-NAME,Eagle,REJECT
+
+# === 2. Antigravity 专属规则（走 💬 Ai平台 策略组） ===
+PROCESS-NAME,Antigravity,"💬 Ai平台"
+
+# === 3. 针对 192.168.100.169 的专属拦截 ===
+# 注意：若 sony.list 放在本地，需保证 Surge 目录有该文件；若有在线链接建议直接写 URL
+AND,((SRC-IP,192.168.100.169), (RULE-SET,sony.list)),REJECT
+AND,((SRC-IP,192.168.100.169), (DOMAIN-SUFFIX,playstation.net)),REJECT
+AND,((SRC-IP,192.168.100.169), (DOMAIN-SUFFIX,playstation.com)),REJECT
+
+# === 4. 针对 192.168.100.170 的专属拦截 ===
+AND,((SRC-IP,192.168.100.170), (RULE-SET,sony.list)),REJECT
+AND,((SRC-IP,192.168.100.170), (DOMAIN-SUFFIX,playstation.net)),REJECT
+AND,((SRC-IP,192.168.100.170), (DOMAIN-SUFFIX,playstation.com)),REJECT
+
+# === 5. 针对 192.168.100.128 的专属拦截 ===
+AND,((SRC-IP,192.168.100.128), (DOMAIN-KEYWORD,sony)),REJECT
+AND,((SRC-IP,192.168.100.128), (DOMAIN-KEYWORD,playstation)),REJECT
+AND,((SRC-IP,192.168.100.128), (DOMAIN-SUFFIX,sony)),REJECT
+
+# === 6. 远程规则集（已将 // 修正为标准的 # 注释） ===
+RULE-SET,https://raw.githubusercontent.com/wanderxun/surge-rules/refs/heads/main/current/E-Amazon.list,DIRECT,no-resolve # E-Amazon
+RULE-SET,https://raw.githubusercontent.com/wanderxun/surge-rules/refs/heads/main/current/custom-direct.list,DIRECT,no-resolve # direct
+RULE-SET,https://raw.githubusercontent.com/wanderxun/surge-rules/refs/heads/main/current/custom-proxy.list,"🌍 国外媒体",no-resolve # custom-proxy
