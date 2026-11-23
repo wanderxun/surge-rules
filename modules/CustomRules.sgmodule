@@ -15,7 +15,9 @@
 [Rule]
 # === 1. 本机 App 拦截（已规范为标准进程名） ===
 PROCESS-NAME,Capture One,REJECT
+PROCESS-NAME,"/Applications/Capture One.app/",REJECT
 PROCESS-NAME,Luminar Neo,REJECT
+PROCESS-NAME,"/Applications/Luminar Neo.app/",REJECT
 PROCESS-NAME,Eagle,REJECT
 PROCESS-NAME,/Applications/Eagle.app/,REJECT
 
