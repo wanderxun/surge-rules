@@ -18,6 +18,8 @@ PROCESS-NAME,Capture One,REJECT
 PROCESS-NAME,Luminar Neo,REJECT
 PROCESS-NAME,Eagle,REJECT
 PROCESS-PATH,/Applications/Eagle.app/*,REJECT
+PROCESS-NAME,Eagle Helper,REJECT
+DOMAIN-SUFFIX,eagle.cool,REJECT
 
 # === 2. Antigravity 专属规则（走 💬 Ai平台 策略组） ===
 PROCESS-NAME,Antigravity,"💬 Ai平台"
